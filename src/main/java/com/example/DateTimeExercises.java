@@ -62,5 +62,20 @@ public class DateTimeExercises {
         System.out.println("Month (name): " + month.name());
 
 
+        // Exercise 7
+        LocalDate birthDate = LocalDate.of(1995, 10, 25);
+
+        // To get years/months/days you need Period.betweeb
+        java.time.Period diff = java.time.Period.between(birthDate, futurePast);
+
+        System.out.println(diff.getYears() + " years, " + diff.getMonths() + " months");
+
+        // Exercise 8
+
+        LocalDate currentDate = LocalDate.now();
+        LocalDate result8 = today.plusYears(4).plusMonths(7).plusDays(29);
+        System.out.println("Exercise 8: " + result8);
+
+
     }
 }
