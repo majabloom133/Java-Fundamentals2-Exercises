@@ -105,8 +105,26 @@ System.out.println("Exercise 14 - Formatted: " + formattedDT);
 
 
         // Exercise 15
+        // Create Date, Create Time
+        LocalDate myDate = LocalDate.of(2026, 12, 24);
+        LocalTime myTime = LocalTime.of(15, 0);
+        // Combine to LocalDateTime object
+        LocalDateTime combinedDT = LocalDateTime.of(myDate,myTime);
+        //Print comnined date and time
+        System.out.println("Exercise 15 - Combined Date and Time: " + combinedDT);
 
         // Exercise 16
+        // Create LocalDateTime object
+        LocalDateTime currentFull = LocalDateTime.now();
+        //Extract LocalTime and LocalDate to their own variables
+        LocalDate justTheDate = currentFull.toLocalDate();
+        LocalTime justTheTime = currentFull.toLocalTime();
+        // Print the separated objects
+        System.out.println("\nExercise 16 - Extracted Components: ");
+        System.out.println("Date object: " + justTheDate);
+        System.out.println("Time object: " + justTheTime);
+
+
 
 
     }
