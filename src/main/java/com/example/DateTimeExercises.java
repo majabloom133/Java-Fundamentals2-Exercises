@@ -1,8 +1,6 @@
 package com.example;
 
 import java.time.*;
-import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAdjusters;
 
 public class DateTimeExercises {
 
