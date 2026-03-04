@@ -22,10 +22,29 @@ public class StringExercises {
         System.out.println("Ex 3; Index position of 'o' is: " + position);
 
         // Exercise 4
+        String str4 = "Ok this is not as long!";
+        String sub = str4.substring(11,22);
+        System.out.println("Ex 4: " + sub);
 
         // Exercise 5
+        String caps = "CAPS EQUALS SCREAMING";
+        String lower = caps.toLowerCase();
+        System.out.println("Ex 5: " + lower);
+        System.out.println("Ex 5 back: " + lower.toUpperCase());
 
         // Exercise 6
+        String tabs = "\tJ\ta\tv\ta\t";
+        System.out.println("Ex 6: " + tabs.trim());
+
+        // Exercise 7
+
+
+        // Exercise 8
+
+
+        // Exercise 9
+
+
 
     }
 }
