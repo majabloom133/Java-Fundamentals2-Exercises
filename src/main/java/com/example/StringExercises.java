@@ -37,12 +37,22 @@ public class StringExercises {
         System.out.println("Ex 6: " + tabs.trim());
 
         // Exercise 7
+        int number = 20;
+        String numberStr = String.valueOf(number);
+        System.out.println("Ex 7: " + numberStr + "20");
 
 
         // Exercise 8
-
+        // Split Oil + Water
+        String oilWater = "Oil and Water";
+        String[] words = oilWater.split(" and ");
+        // Prints out oil + water
+        System.out.println("Ex 8: " + words[0]);
+        System.out.println("Ex 8: " + words[1]);
 
         // Exercise 9
+    String nameStr
+
 
 
 
