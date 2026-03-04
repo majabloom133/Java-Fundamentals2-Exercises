@@ -76,6 +76,22 @@ public class DateTimeExercises {
         LocalDate result8 = today.plusYears(4).plusMonths(7).plusDays(29);
         System.out.println("Exercise 8: " + result8);
 
+        // Exercise 9
+        LocalTime now = LocalTime.now();
+
+        // Exercise 10
+        int nano = now.getNano();
+        System.out.println("Exercise 10 - Nano seconds: " + nano);
+
+        // Exercise 11
+        LocalTime parsedTime = LocalTime.parse("10:32:53");
+
+        // Exercise 12
+        DateTimeFormatter timeFmt = DateTimeFormatter.ofPattern("HH:mm:ss");
+        String formattedTime = now.format(timeFmt);
+
+        System.out.println("Exercise 12 - Formatted Current Time: " + formattedTime);
+
 
     }
 }
