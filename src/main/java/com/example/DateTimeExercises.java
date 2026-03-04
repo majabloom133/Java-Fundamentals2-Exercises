@@ -39,5 +39,13 @@ public class DateTimeExercises {
 
         // Exercise 4
 
+        String isoString = "2026-03-04";
+        LocalDate parsedDate = LocalDate.parse(isoString);
+        System.out.println("\nExercise4 - Parsed Date: " + parsedDate);
+
+        // Exercise 5
+
+
+
     }
 }
