@@ -5,9 +5,13 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjusters;
 import java.util.Locale;
 
+
 public class DateTimeExercises {
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
+        if (args.length > 0) {
+            System.out.println("Argument passed; " + args[0]);
+        }
 
         // Exercise 1
         LocalDate today = LocalDate.now();
