@@ -88,9 +88,25 @@ public class DateTimeExercises {
 
         // Exercise 12
         DateTimeFormatter timeFmt = DateTimeFormatter.ofPattern("HH:mm:ss");
+        // Add string
         String formattedTime = now.format(timeFmt);
-
+        // Print formatted time
         System.out.println("Exercise 12 - Formatted Current Time: " + formattedTime);
+
+        // Exercise 13
+        LocalDateTime specificDT = LocalDateTime.of(2018,4, 5, 10, 0);
+        System.out.println("Exercise 13 - Specific LocalDateTime: " + specificDT);
+
+
+        // Exercise 14
+        DateTimeFormatter swedishLongFmt = DateTimeFormatter.ofPattern("eeee d MMMM HH:mm", Locale.forLanguageTag("sv"));
+String formattedDT = specificDT.format(swedishLongFmt);
+System.out.println("Exercise 14 - Formatted: " + formattedDT);
+
+
+        // Exercise 15
+
+        // Exercise 16
 
 
     }
