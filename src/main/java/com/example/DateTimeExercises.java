@@ -7,7 +7,7 @@ import java.util.Locale;
 
 public class DateTimeExercises {
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         if (args.length > 0) {
             System.out.println("Argument passed; " + args[0]);
         }
@@ -45,6 +45,21 @@ public class DateTimeExercises {
 
         // Exercise 5
 
+        // Exercise 6
+        System.out.println("\nExercise 6 - Future and Past Date");
+
+        // Get today's date
+        // Plus 10 years, minus 10 months
+        LocalDate futurePast = today
+                .plusYears(10)
+                .minusMonths(10);
+
+        System.out.println("After +10 years -10 months: " + futurePast);
+
+        // Extract month
+        Month month = futurePast.getMonth();
+        System.out.println("Month (enum): " + month);
+        System.out.println("Month (name): " + month.name());
 
 
     }
