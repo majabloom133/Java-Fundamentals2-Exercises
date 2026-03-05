@@ -51,7 +51,35 @@ public class StringExercises {
         System.out.println("Ex 8: " + words[1]);
 
         // Exercise 9
-    String nameStr
+        String nameStr = "Carl,Susie,Fredrick,Bob,Erik";
+        // Use "," to split the string at every comma
+        // The result is being stored in "namesArray"
+        String[] namesArray = nameStr.split(",");
+            System.out.println("Ex 9 - Split String (Names)");
+            // Use for-each loop to go through the array
+        for (String name : namesArray) {
+        // Print names
+        System.out.println(name);
+    }
+
+        // Exercise 10 - Convert to char array
+        String text10 = "ThisShouldBeConverted";
+        // toCharArray splits the string in single letters.
+        // They are stored in (char[])
+        char[] charArray = text10.toCharArray();
+                System.out.println("\nExercise 10 - Convert to char array:");
+        // Loop through the char-array and print every element 'c'.
+        for (char c : charArray) {
+            System.out.print(c + " ");
+        }
+
+
+        // Exercise 11 - Convert Char Array to String
+        char[] javaChars = { 'J', 'a', 'v', 'a'};
+        // Create String Object, "glues" letters back together
+        String javaString = new String(javaChars);
+        // Print result
+        System.out.println("\nExercise 11 - Convert Char Array to String" + javaString);
 
 
 
